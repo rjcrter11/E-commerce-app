@@ -13,14 +13,16 @@ import CheckoutPage from './pages/checkout/checkout.component'
 
 import { setCurrentUser } from './redux/user/user.actions'
 import { selectCurrentUser } from './redux/user/user.selector'
+import { fetchCollectionsStartAsync } from './redux/shop/shop.actions'
 
 
 import './App.css';
 
 
-const App = ({ setCurrentUser, currentUser }) => {
+const App = ({ setCurrentUser, currentUser, fetchCollectionsStartAsync }) => {
 
   useEffect(() => {
+    fetchCollectionsStartAsync()
     const unsubscribe = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = createUserProfileDocument(userAuth)
@@ -38,7 +40,7 @@ const App = ({ setCurrentUser, currentUser }) => {
     return () => {
       unsubscribe()
     }
-  }, [setCurrentUser])
+  }, [setCurrentUser, fetchCollectionsStartAsync])
 
   return (
     <div >
@@ -66,8 +68,9 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user)),
-
+  fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync())
 })
+
 
 export default connect(
   mapStateToProps,
