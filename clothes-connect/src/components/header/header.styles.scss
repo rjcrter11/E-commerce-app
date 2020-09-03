@@ -7,7 +7,19 @@
 
     .logo-container {
         height: 100%; 
-        width: 70px; 
+        width: 275px; 
+        display: flex;
+        align-items: center;
+
+        .store-name {
+           padding-left: 5px; 
+           padding-bottom: 1px; 
+           font-family: 'Open Sans Condensed';
+           color: rgb(121, 141, 235);  
+           position: absolute;
+           left: 83.5px; 
+           font-size: 25px;    
+        }
     
     }
 
