@@ -65,6 +65,16 @@ This project uses Sass for styling. Each stylesheet is located in the matching t
 [Redux](https://www.redux.org) is a predictable state container for JavaScript apps. Applications behave consistently, run in different environments(client, server, and native) and are easy to test. It runs with React or any other view library, and is tiny(2kB).   
 A tutorial for Redux can be found [here](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 
+## Todos for Future Iterations 
+- Make the project mobile friendly. 
+- Add large amount of seeded data 
+- Add User profiles
+- Add the ability to see past purchases
+- Make another repo to build my own server
+- The server will be GraphQL, with Prisma as a database toolkit, and Apollo Server
+- Because of this change, this project will be modified to accomodate Apollo client, possibly negating the need for Redux 
+  in favor of Apollo Client to handle state management 
+
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owner of this repository before making a change.
