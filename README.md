@@ -4,7 +4,7 @@
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/rjcrter11/E-commerce-app?style=plastic)
 
 # Thread Connects 
-Thread Connects is an E-commerce app for practicing principles and React and Redux. You can find the deployed project at [Thread Connects](https://thread-connects.vercel.app/)
+Thread Connects is an E-commerce app for practicing principles of React and Redux. You can find the deployed project at [Thread Connects](https://thread-connects.vercel.app/)
 
 
 ## Project Overview
