@@ -4,7 +4,7 @@
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/rjcrter11/E-commerce-app?style=plastic)
 
 # Thread Connects 
-Thread Connects is an E-commerce app for practicing principles and React and Redux. You can find the deployed project at [Thread Connects](https://thread-connects.vercel.app/)
+Thread Connects is an E-commerce app for practicing principles of React and Redux. You can find the deployed project at [Thread Connects](https://thread-connects.vercel.app/)
 
 
 ## Project Overview
@@ -36,7 +36,25 @@ This application uses [Create-React-App](https://github.com/facebook/create-reac
 
 ## Firebase 
 
-This project uses Firebase to authenticate user accounts. You can find an in depth rundown to set up a Firebase Authentication service [here](https://firebase.google.com/docs/web/setup?authuser=0)
+#### Authentication
+
+This project uses Firebase to authenticate user accounts. Firebase provides backend services and ready-made UI libraries to authenticate users, and supports authentication using passwords, phone numbers and popular federated identity providers like Google(used in this project), Facebook and Twitter.   
+You can find an in depth rundown on how to set up a Firebase Authentication service [here](https://firebase.google.com/docs/web/setup?authuser=0)
+
+#### Data Storage
+
+Data storage for this project is handled through Firebase, which is a flexible and scalable NoSQL cloud database that offers expressive querying and realtime updates.   
+Docs for setting up a Cloud Firestore database can be found [here](https://firebase.google.com/docs/firestore/quickstart?authuser=0)
+
+## Stripe
+Payment processing is enabled in this project through Stripe, which offres payment processing software and APIs for e-commerce websites and mobile applications.  
+Integrating Stipe requires three steps after signup:  
+  - Obtain API keys. 
+  - Install a client library. 
+  - Make a test API request.   
+  
+Docs for setting up Stripe payment processing can be found [here](https://stripe.com/docs/development/quickstart)
+
 
 ## Styling 
 
@@ -44,7 +62,8 @@ This project uses Sass for styling. Each stylesheet is located in the matching t
 
 ## State Management
 
-[Redux](https://www.redux.org) is a predictable state container for JavaScript apps. Applications behave consistently, run in different environments(client, server, and native) and are easy to test. It runs with React or any other view library, and is tiny(2kB). A tutorial for Redux can be found [here](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+[Redux](https://www.redux.org) is a predictable state container for JavaScript apps. Applications behave consistently, run in different environments(client, server, and native) and are easy to test. It runs with React or any other view library, and is tiny(2kB).   
+A tutorial for Redux can be found [here](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 
 ## Contributing
 
