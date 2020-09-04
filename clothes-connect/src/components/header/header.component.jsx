@@ -4,7 +4,6 @@ import { auth } from '../../firebase/firebase.utils'
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect'
 
-import { ReactComponent as Logo } from '../../assets/connect.svg'
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
 import { selectCartHidden } from '../../redux/cart/cart.selectors'
@@ -14,27 +13,22 @@ import './header.styles.scss';
 const Header = ({ currentUser, hidden }) => (
     <div className='header' >
         <Link className='logo-container' to='/' >
-            <Logo className='logo' />
-            <h2 className='store-name' >Thread Connects</h2>
+            <img src={require('../../assets/logo.png')} alt='logo' />
         </Link>
 
-        <div className='options' >
+        <div className='options'  >
+            <CartIcon />
+            {
+                hidden ? null : <CartDropdown />
+            }
             <Link to='/shop' className='option' >SHOP</Link>
-            <Link to='/shop' className='option' >CONTACT</Link>
-
             {
                 currentUser ?
-                    <div className='option' onClick={() => auth.signOut()} >SIGN OUT</div>
+                    <a href='/' className='option sign-in-link ' onClick={() => auth.signOut()} >SIGN OUT</a>
                     :
-                    <Link className='option' to='/signin' >SIGN IN</Link>
+                    <Link className='option sign-in-link' to='/signin' >SIGN IN</Link>
             }
-            <CartIcon />
         </div>
-        {
-            hidden ? null :
-                <CartDropdown />
-        }
-
     </div>
 )
 

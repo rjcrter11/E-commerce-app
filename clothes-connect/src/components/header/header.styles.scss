@@ -1,26 +1,19 @@
 .header {
-    height: 70px; 
-    width: 100%;
+    height: 90px; 
+    width: 94%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
+    margin: 0 auto; 
 
     .logo-container {
-        height: 100%; 
-        width: 275px; 
-        display: flex;
-        align-items: center;
+        height: 200px; 
+        width: 50%; 
 
-        .store-name {
-           padding-left: 5px; 
-           padding-bottom: 1px; 
-           font-family: 'Open Sans Condensed';
-           color: rgb(121, 141, 235);  
-           position: absolute;
-           left: 83.5px; 
-           font-size: 25px;    
+        img {
+            height: 85px; 
+            width: 170px;   
         }
-    
     }
 
     .options {
@@ -29,10 +22,45 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        
 
         .option {
-            padding: 10px 15px; 
+            margin-bottom: 5px; 
+            padding: 12px 15px; 
             cursor: pointer; 
+
+           
         }
+
+         button {
+                background-color: white; 
+                color: rgba(82, 101, 117, 0.856);
+                border-radius: 5px;
+                border: 1px solid rgba(82, 101, 117, 0.856);
+
+                &:hover {
+                    background-color: rgb(93, 191, 216); 
+                    color: white; 
+                    border: none; 
+
+                }
+             
+            }
+
+            .sign-in-link {
+                background-color: white; 
+                color: rgba(52, 67, 80, 0.856);
+                border-radius: 5px;
+                border: 1px solid rgb(82, 101, 117);
+
+                &:hover {
+                    background-color: rgb(93, 191, 216); 
+                    color: white; 
+                    border: none;
+                }
+                
+            }
+        
+        
     }
 }
