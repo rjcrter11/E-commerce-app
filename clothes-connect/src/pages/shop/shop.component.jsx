@@ -8,7 +8,7 @@ import CollectionsOverviewContainer from '../../components/collections-overview/
 import { fetchCollectionsStartAsync } from '../../redux/shop/shop.actions'
 
 
-const ShopPage = ({ fetchCollectionsStartAsync, match, isCollectionFetching }) => {
+export const ShopPage = ({ fetchCollectionsStartAsync, match, isCollectionFetching }) => {
 
     useEffect(() => {
         fetchCollectionsStartAsync()
