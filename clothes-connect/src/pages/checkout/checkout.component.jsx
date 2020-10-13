@@ -10,7 +10,7 @@ import StripCheckoutButton from '../../components/stripe-button/stripe-button.co
 
 import './checkout.styles.scss'
 
-const CheckoutPage = ({ cartItems, total, user }) => {
+export const CheckoutPage = ({ cartItems, total, user }) => {
     return (
         <>
             {
