@@ -10,23 +10,43 @@ import {
 describe('toggleCartHidden action', () => {
     it('should create the toggleHidden action', () => {
         expect(toggleCartHidden().type).toEqual(CartActionTypes.TOGGLE_CART_HIDDEN)
-    })
-})
+    });
+});
 
 describe('addItem action', () => {
     it('should create addItem action', () => {
-        expect(addItem().type).toEqual(CartActionTypes.ADD_ITEM)
-    })
-})
+        const mockItem = {
+            id: 1
+        };
+
+        const action = addItem(mockItem)
+        expect(action.type).toEqual(CartActionTypes.ADD_ITEM);
+        expect(action.payload).toEqual(mockItem);
+
+    });
+});
 
 describe('removeItem action', () => {
     it('should create remove action', () => {
-        expect(removeItem().type).toEqual(CartActionTypes.REMOVE_ITEM)
-    })
-})
+        const mockItem = {
+            id: 1
+        };
+
+        const action = removeItem(mockItem);
+
+        expect(action.type).toEqual(CartActionTypes.REMOVE_ITEM);
+        expect(action.payload).toEqual(mockItem);
+    });
+});
 
 describe('clearItemsFromCart action', () => {
     it('should create clearItemFromCart action', () => {
-        expect(clearItemFromCart().type).toEqual(CartActionTypes.CLEAR_ITEM_FROM_CART)
-    })
-})
+        const mockItem = {
+            id: 1
+        };
+        const action = clearItemFromCart(mockItem);
+
+        expect(action.type).toEqual(CartActionTypes.CLEAR_ITEM_FROM_CART);
+        expect(action.payload).toEqual(mockItem)
+    });
+});
