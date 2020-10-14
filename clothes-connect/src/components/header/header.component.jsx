@@ -10,7 +10,7 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors'
 import { selectCurrentUser } from '../../redux/user/user.selector'
 import './header.styles.scss';
 
-const Header = ({ currentUser, hidden }) => (
+export const Header = ({ currentUser, hidden }) => (
     <div className='header' >
         <Link className='logo-container' to='/' >
             <img src={require('../../assets/logo.png')} alt='logo' />
@@ -21,12 +21,12 @@ const Header = ({ currentUser, hidden }) => (
             {
                 hidden ? null : <CartDropdown />
             }
-            <Link to='/shop' className='option' >SHOP</Link>
+            <Link data-testid="shop-link" to='/shop' className='option' >SHOP</Link>
             {
                 currentUser ?
-                    <a href='/' className='option sign-in-link ' onClick={() => auth.signOut()} >SIGN OUT</a>
+                    <a href='/' data-testid="signout-link" className='option sign-in-link ' onClick={() => auth.signOut()} >SIGN OUT</a>
                     :
-                    <Link className='option sign-in-link' to='/signin' >SIGN IN</Link>
+                    <Link data-testid="signin-link" className='option sign-in-link' to='/signin' >SIGN IN</Link>
             }
         </div>
     </div>
