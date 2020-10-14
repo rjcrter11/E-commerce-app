@@ -1,5 +1,5 @@
 ![GitHub](https://img.shields.io/github/license/rjcrter11/E-commerce-app?style=plastic)
-![GitHub deployments](https://img.shields.io/github/deployments/rjcrter11/E-commerce-app/production?label=vercel&logo=vercel&style=plastic)
+![GitHub deployments](https://img.shields.io/github/deployments/rjcrter11/E-commerce-app/preview?label=Vercel&logo=vercel&style=plastic)
 ![GitHub top language](https://img.shields.io/github/languages/top/rjcrter11/E-commerce-app?style=plastic)
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/rjcrter11/E-commerce-app?style=plastic)
 
