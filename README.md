@@ -4,6 +4,9 @@
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/rjcrter11/E-commerce-app?style=plastic)
 
 # Thread Connects 
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/10cab5db6ec74779bda252a2bfe34a59)](https://app.codacy.com/gh/rjcrter11/E-commerce-app?utm_source=github.com&utm_medium=referral&utm_content=rjcrter11/E-commerce-app&utm_campaign=Badge_Grade)
+
 Thread Connects is an E-commerce app for practicing principles of React and Redux. You can find the deployed project at [Thread Connects](https://thread-connects.vercel.app/)
 
 
