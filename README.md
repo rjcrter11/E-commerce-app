@@ -1,11 +1,11 @@
-![GitHub](https://img.shields.io/github/license/rjcrter11/E-commerce-app?style=plastic)
-![GitHub deployments](https://img.shields.io/github/deployments/rjcrter11/E-commerce-app/preview?label=Vercel&logo=vercel&style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/rjcrter11/E-commerce-app?style=plastic)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/rjcrter11/E-commerce-app?style=plastic)
 
 # Thread Connects 
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/10cab5db6ec74779bda252a2bfe34a59)](https://app.codacy.com/gh/rjcrter11/E-commerce-app?utm_source=github.com&utm_medium=referral&utm_content=rjcrter11/E-commerce-app&utm_campaign=Badge_Grade)
+![GitHub](https://img.shields.io/github/license/rjcrter11/E-commerce-app?style=plastic)
+![GitHub deployments](https://img.shields.io/github/deployments/rjcrter11/E-commerce-app/preview?label=Vercel&logo=vercel&style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/rjcrter11/E-commerce-app?style=plastic)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/rjcrter11/E-commerce-app?style=plastic)
 
 Thread Connects is an E-commerce app for practicing principles of React and Redux. You can find the deployed project at [Thread Connects](https://thread-connects.vercel.app/)
 
